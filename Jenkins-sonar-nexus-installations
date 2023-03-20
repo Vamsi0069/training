@@ -41,6 +41,17 @@ sudo apt-get install jenkins -y
 sudo service jenkins start
 sudo service jenkins status
 
+to edit port information 
+--------------------------
+https://stackoverflow.com/questions/70100117/cant-get-jenkins-to-run-on-different-port-on-ubuntu-20-4
+
+systemctl edit jenkins
+
+Enter:
+------
+[Service]
+Environment="JENKINS_PORT=8888"
+
 
 follow this document to install jenkins
 https://www.liquidweb.com/kb/installing-jenkins-on-ubuntu-16-04/ 
