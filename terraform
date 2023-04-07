@@ -45,3 +45,5 @@ resource "google_compute_instance" "default" {
 
 
 Reference document: https://cloud.google.com/docs/terraform/get-started-with-terraform
+
+About Terraform: https://blogs.perficient.com/2022/06/01/integrating-terraform-with-jenkins-ci-cd/
