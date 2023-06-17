@@ -1,0 +1,13 @@
+
+    1  sudo su - jenkins
+    2  sudo chown -R jenkins:jenkins /var/lib/jenkins
+    3  sudo chmod 666 /var/run/docker.sock
+    4  sudo usermod -a -G docker jenkins
+    5  sudo usermod -a -G docker ubuntu
+
+ vi /etc/sudoers
+     jenkins ALL=(ALL) NOPASSWD: ALL
+
+(add above step under this 
+# User privilege specification
+root    ALL=(ALL:ALL) ALL)
